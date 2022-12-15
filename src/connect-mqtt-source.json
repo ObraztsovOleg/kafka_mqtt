@@ -1,0 +1,21 @@
+{
+    "name": "mqtt-source",
+    "config": {
+        "connector.class": "io.confluent.connect.mqtt.MqttSourceConnector",
+        "tasks.max": 1,
+        "mqtt.username": "Hans",
+        "mqtt.password": "yHsa6W2IHAyNrcR5!0tE",
+        "mqtt.server.uri": "tcp://62.3.58.70:1883",
+        "mqtt.topics": "s14",
+        "kafka.topic": "test",
+        "mqtt.clean.session.enabled": true,
+        "mqtt.connect.timeout.seconds": 30,
+        "key.converter.schemas.enable":false,
+        "confluent.topic.bootstrap.servers": "kafka:9092",
+        "mqtt.keepalive.interval.seconds": 60,
+        "value.converter": "org.apache.kafka.connect.converters.ByteArrayConverter",
+        "key.converter": "org.apache.kafka.connect.json.JsonConverter",
+        "connect.mqtt.converter.throw.on.error": true,
+        "connect.progress.enabled": true
+    }
+}
